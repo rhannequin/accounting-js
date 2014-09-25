@@ -1,0 +1,23 @@
+{
+  "name": "accounting",
+  "version": "0.0.0",
+  "description": "Small tool to make my accounting and get interesting figures.",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:rhannequin/accounting.git"
+  },
+  "keywords": [
+    "nodejs",
+    "gulp",
+    "accounting"
+  ],
+  "author": "rhannequin",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.8.8"
+  }
+}

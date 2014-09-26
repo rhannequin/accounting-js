@@ -13,7 +13,7 @@ Small tool to help me doing my accounting and get some interesting figures.
 
 ```bash
 $ npm install
-$ cp data.example.json data.json
+$ cp data.example.json src/data.json
 ```
 
 

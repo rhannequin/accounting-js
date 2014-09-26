@@ -4,6 +4,7 @@ module.exports = {
 
   , sources: {
       root: 'src/'
+    , templates: 'src/templates/'
   }
 
   , dist: {

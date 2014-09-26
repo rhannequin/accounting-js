@@ -18,6 +18,9 @@
   "author": "rhannequin",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.8.8"
+    "gulp": "^3.8.8",
+    "gulp-jade": "^0.8.0",
+    "gulp-plumber": "^0.6.5",
+    "gulp-rimraf": "^0.1.0"
   }
 }

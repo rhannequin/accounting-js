@@ -1,8 +1,12 @@
 table
   tr
     th Titre
+    th Moyen
+    th Date
     th Valeur
   each expense in expenses
     tr
       td= expense.label
+      td= expense.means
+      td= moment(expense.date).format('L')
       td= expense.value

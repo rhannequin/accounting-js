@@ -18,5 +18,15 @@ module.exports = {
     })
     return json
   }
+  ,
+  sortByDate: function(arr) {
+    return arr.sort(function(a, b) {
+      return b.date - a.date
+    })
+  }
+  ,
+  sortAndConvert: function(json) {
+    return this.sortByDate(this.convert(json))
+  }
 
 }

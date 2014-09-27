@@ -5,8 +5,9 @@ table
     th Date
     th Valeur
   each expense in expenses
-    tr
+    - var klass = (expense.value > 0 ? 'positive' : '')
+    tr(class=klass)
       td= expense.label
       td= expense.means
       td= moment(expense.date).format('L')
-      td= expense.value
+      td= expense.value + currency

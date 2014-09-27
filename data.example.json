@@ -1,4 +1,18 @@
 [
-    { "label": "Chinese at work", "means": "CB", "date": "2014-09-25", "value": -10 }
-  , { "label": "Shopping", "means": "CB", "date": "2014-09-26", "value": -54.78 }
+    { "label": "A", "means": "CB", "date": "2014-08-25", "value": -10 }
+  , { "label": "B", "means": "CB", "date": "2014-08-26", "value": -54.78 }
+  , { "label": "C", "means": "CB", "date": "2014-08-23", "value": -35.97 }
+  , { "label": "D", "means": "CB", "date": "2014-08-30", "value": -5.09 }
+  , { "label": "E", "means": "CB", "date": "2014-09-01", "value": 2000 }
+  , { "label": "F", "means": "CB", "date": "2014-09-01", "value": -6.70 }
+  , { "label": "G", "means": "CB", "date": "2014-09-02", "value": -7.68 }
+  , { "label": "H", "means": "CB", "date": "2014-09-03", "value": -6.77 }
+  , { "label": "I", "means": "CB", "date": "2014-09-06", "value": -76.9 }
+  , { "label": "J", "means": "CB", "date": "2014-09-07", "value": -32.5 }
+  , { "label": "K", "means": "CB", "date": "2014-09-06", "value": -44.5 }
+  , { "label": "L", "means": "CB", "date": "2014-09-08", "value": -4.64 }
+  , { "label": "M", "means": "CB", "date": "2014-09-10", "value": -54.65 }
+  , { "label": "N", "means": "CB", "date": "2014-09-15", "value": -65.67 }
+  , { "label": "O", "means": "CB", "date": "2014-09-21", "value": -3.23 }
+  , { "label": "P", "means": "CB", "date": "2014-09-26", "value": -5.44 }
 ]

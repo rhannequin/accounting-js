@@ -10,4 +10,4 @@ table
       td= expense.label
       td= expense.means
       td= moment(expense.date).format('L')
-      td= expense.value + currency
+      td= expense.value.toFixed(2) + currency

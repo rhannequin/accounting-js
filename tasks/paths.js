@@ -2,6 +2,7 @@ module.exports = {
 
     root: './'
 
+  , tasks: 'tasks/'
   , works: 'works/'
 
   , sources: {

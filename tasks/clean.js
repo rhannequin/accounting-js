@@ -5,7 +5,8 @@ var gulp    = require('gulp')
 
 module.exports = function() {
   return gulp.src([
-      paths.dist.root + '**/*'
+        paths.dist.styles + '**/*'
+      , paths.dist.scripts + '**/*'
     ], { read: false })
     .pipe(plumber())
     .pipe(rimraf())

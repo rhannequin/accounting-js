@@ -6,7 +6,11 @@ gulp.task('clean', require(tasks + 'clean'))
 
 gulp.task('html', require(tasks + 'html'))
 
-gulp.task('dist', ['html'])
+// Generated assets
+gulp.task('styles', require(tasks + 'styles'))
+gulp.task('scripts', require(tasks + 'scripts'))
+
+gulp.task('dist', ['clean', 'html', 'styles', 'scripts'])
 
 // Server and livereaload
 gulp.task('server', require(tasks + 'server').start)

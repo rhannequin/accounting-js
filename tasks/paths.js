@@ -2,6 +2,8 @@ module.exports = {
 
     root: './'
 
+  , works: 'works/'
+
   , sources: {
         root: 'src/'
       , styles: 'src/styles/'

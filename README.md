@@ -14,6 +14,7 @@ Small tool to help me doing my accounting and get some interesting figures.
 ```bash
 $ npm install
 $ cp data.example.json src/data.json
+$ cp config.example.json src/config.json
 ```
 
 

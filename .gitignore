@@ -3,3 +3,4 @@ dist/
 .sass-cache/
 
 src/data.json
+src/config.json

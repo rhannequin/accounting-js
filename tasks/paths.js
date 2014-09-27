@@ -4,6 +4,7 @@ module.exports = {
 
   , tasks: 'tasks/'
   , works: 'works/'
+  , locales: 'locales/'
 
   , sources: {
         root: 'src/'

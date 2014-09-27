@@ -4,12 +4,14 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title Accounting
+    title= i18n.__('application_name')
     link(href='assets/css/main.css', rel='stylesheet')
   body
     .row
-      h1 Accounting
-      h2 Current amount: #{currentAmount.toFixed(2) + currency}
+      h1= i18n.__('application_name')
+
+      h2= i18n.__('current_amount', { amount: currentAmount.toFixed(2) + currency })
+
       include templates/main
 
     script(src='assets/js/main.js')

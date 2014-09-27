@@ -2,6 +2,7 @@ var gulp          = require('gulp')
   , jade          = require('gulp-jade')
   , plumber       = require('gulp-plumber')
   , moment        = require('moment')
+  , i18n          = require('i18n')
   , paths         = require('./paths')
   , utils         = require('../utils')
   , config        = require('../' + paths.sources.root + 'config.json')
@@ -9,7 +10,13 @@ var gulp          = require('gulp')
   , currentAmount = require('../' + paths.works + 'currentAmount')
   , jadeParams
 
-moment.locale('fr')
+moment.locale(config.locale)
+i18n.configure({
+    locales: [config.locales.split(',')]
+  , defaultLocale: config.locale
+  , directory: paths.locales
+  , objectNotation: true
+})
 
 expenses = utils.sortAndConvert(expenses)
 jadeParams = {
@@ -17,6 +24,7 @@ jadeParams = {
   , locals: {
       expenses: expenses
     , moment: moment
+    , i18n: i18n
     , currency: config.currency
     , currentAmount: currentAmount(expenses, config)
   }

@@ -1,4 +1,6 @@
 {
     "currency": "€"
   , "startAmount": 1000
+  , "locales": "en,fr"
+  , "locale": "fr"
 }

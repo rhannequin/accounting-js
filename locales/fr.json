@@ -1,0 +1,10 @@
+{
+  "application_name": "Comptes",
+  "current_amount": "Montant actuel : {{amount}}",
+  "table": {
+    "label": "Titre",
+    "means": "Moyen",
+    "date": "Date",
+    "value": "Valeur"
+  }
+}

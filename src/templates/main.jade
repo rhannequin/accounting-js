@@ -1,9 +1,9 @@
 table
   tr
-    th Titre
-    th Moyen
-    th Date
-    th Valeur
+    th= i18n.__('table.label')
+    th= i18n.__('table.means')
+    th= i18n.__('table.date')
+    th= i18n.__('table.value')
   each expense in expenses
     - var klass = (expense.value > 0 ? 'positive' : '')
     tr(class=klass)

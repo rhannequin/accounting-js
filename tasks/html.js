@@ -8,21 +8,21 @@ var gulp          = require('gulp')
   , config        = require('../' + paths.sources.root + 'config.json')
   , expenses      = require('../' + paths.sources.root + 'data.json')
   , currentAmount = require('../' + paths.works + 'currentAmount')
+  , toMonths      = require('../' + paths.works + 'toMonths')
   , jadeParams
 
 moment.locale(config.locale)
 i18n.configure({
-    locales: [config.locales.split(',')]
-  , defaultLocale: config.locale
+    defaultLocale: config.locale
   , directory: paths.locales
   , objectNotation: true
 })
 
-expenses = utils.sortAndConvert(expenses)
+expenses = utils.convert(expenses)
 jadeParams = {
     pretty: true
   , locals: {
-      expenses: expenses
+      expenses: toMonths(expenses)
     , moment: moment
     , i18n: i18n
     , currency: config.currency

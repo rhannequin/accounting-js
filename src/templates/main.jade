@@ -1,13 +1,16 @@
-table
-  tr
-    th= i18n.__('table.label')
-    th= i18n.__('table.means')
-    th= i18n.__('table.date')
-    th= i18n.__('table.value')
-  each expense in expenses
-    - var klass = (expense.value > 0 ? 'positive' : '')
-    tr(class=klass)
-      td= expense.label
-      td= expense.means
-      td= moment(expense.date).format('L')
-      td= expense.value.toFixed(2) + currency
+each month in expenses
+  h3 #{moment.months()[month.month]} #{month.year}
+
+  table
+    tr
+      th= i18n.__('table.label')
+      th= i18n.__('table.means')
+      th= i18n.__('table.date')
+      th= i18n.__('table.value')
+    each expense in month.expenses
+      - var klass = (expense.value > 0 ? 'positive' : '')
+      tr(class=klass)
+        td= expense.label
+        td= expense.means
+        td= moment(expense.date).format('L')
+        td= expense.value.toFixed(2) + currency

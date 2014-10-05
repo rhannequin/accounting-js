@@ -1,5 +1,6 @@
 each month in expenses
   h3 #{moment.months()[month.month]} #{month.year}
+  h4= i18n.__('spent', { amount: (month.spent * (-1)).toFixed(2) }) + currency
 
   table
     tr

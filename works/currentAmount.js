@@ -1,7 +1,6 @@
+var spent = require('./spent')
+
 module.exports = function(expenses, config) {
   var startAmount = config.startAmount
-  expenses.forEach(function(expense) {
-    startAmount += expense.value
-  })
-  return startAmount
+  return startAmount + spent(expenses)
 }

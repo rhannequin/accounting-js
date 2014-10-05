@@ -5,6 +5,7 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title= i18n.__('application_name')
+    link(href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/foundation.css', rel='stylesheet')
     link(href='assets/css/main.css', rel='stylesheet')
   body
     .row
@@ -14,4 +15,7 @@ html(lang='en')
 
       include templates/main
 
+    script(src='//cdn.jsdelivr.net/foundation/5.0.2/js/vendor/custom.modernizr.js')
+    script(src='//code.jquery.com/jquery-1.11.1.min.js')
+    script(src='//cdn.jsdelivr.net/foundation/5.0.2/js/foundation.min.js')
     script(src='assets/js/main.js')

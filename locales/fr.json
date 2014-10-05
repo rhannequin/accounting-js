@@ -1,7 +1,7 @@
 {
   "application_name": "Comptes",
   "current_amount": "Montant actuel : {{amount}}",
-  "spent": "Dépensé : {{amount}}",
+  "spent": "Dépensé",
   "table": {
     "label": "Titre",
     "means": "Moyen",

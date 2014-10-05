@@ -1,17 +1,31 @@
 each month in expenses
-  h3 #{moment.months()[month.month]} #{month.year}
-  h4= i18n.__('spent', { amount: (month.spent * (-1)).toFixed(2) }) + currency
 
-  table
-    tr
-      th= i18n.__('table.label')
-      th= i18n.__('table.means')
-      th= i18n.__('table.date')
-      th= i18n.__('table.value')
-    each expense in month.expenses
-      - var klass = (expense.value > 0 ? 'positive' : '')
-      tr(class=klass)
-        td= expense.label
-        td= expense.means
-        td= moment(expense.date).format('L')
-        td= expense.value.toFixed(2) + currency
+  .row
+
+    .large-6.columns
+
+      h3 #{moment.months()[month.month]} #{month.year}
+
+      table
+        tr
+          th= i18n.__('table.label')
+          th= i18n.__('table.means')
+          th= i18n.__('table.date')
+          th= i18n.__('table.value')
+        each expense in month.expenses
+          - var klass = (expense.value > 0 ? 'positive' : '')
+          tr(class=klass)
+            td= expense.label
+            td= expense.means
+            td= moment(expense.date).format('L')
+            td= expense.value.toFixed(2) + currency
+
+    .large-6.columns
+
+      dl.tabs(data-tab)
+        dd.active
+          a(href='#tab-#{month.year}-#{month.month}-1')
+            h4= i18n.__('spent')
+      .tabs-content
+        .content.active(id='tab-#{month.year}-#{month.month}-1')
+          h4= (month.spent * (-1)).toFixed(2) + currency

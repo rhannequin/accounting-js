@@ -5,8 +5,9 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title= i18n.__('application_name')
-    link(href='//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.5/css/foundation.css', rel='stylesheet')
-    link(href='assets/css/main.css', rel='stylesheet')
+    link(href='/assets/vendors/foundation/css/normalize.css', rel='stylesheet')
+    link(href='/assets/vendors/foundation/css/foundation.css', rel='stylesheet')
+    link(href='/assets/css/main.css', rel='stylesheet')
   body
     .row
       h1= i18n.__('application_name')
@@ -15,7 +16,9 @@ html(lang='en')
 
       include templates/main
 
-    script(src='//cdn.jsdelivr.net/foundation/5.0.2/js/vendor/custom.modernizr.js')
-    script(src='//code.jquery.com/jquery-1.11.1.min.js')
-    script(src='//cdn.jsdelivr.net/foundation/5.0.2/js/foundation.min.js')
-    script(src='assets/js/main.js')
+    script(src='/assets/vendors/modernizr/modernizr.js')
+    script(src='/assets/vendors/jquery/dist/jquery.min.js')
+    script(src='/assets/vendors/jquery-placeholder/jquery.placeholder.js')
+    script(src='/assets/vendors/jquery.cookie/jquery.cookie.js')
+    script(src='/assets/vendors/foundation/js/foundation.min.js')
+    script(src='/assets/js/main.js')

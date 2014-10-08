@@ -17,6 +17,7 @@ module.exports = {
         root: 'dist/'
       , styles: 'dist/assets/css'
       , scripts: 'dist/assets/js'
+      , vendors: 'dist/assets/vendors'
   }
 
 }

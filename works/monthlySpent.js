@@ -3,7 +3,7 @@ var spent = require('./spent')
 
 module.exports = function(months) {
   months.forEach(function(month) {
-    var monthlyExpenses = cExpenses(month.expenses, 'ignore', true)
+    var monthlyExpenses = categoryExpenses(month.expenses, 'ignore', true)
     month.spent = spent(monthlyExpenses)
   })
   return months

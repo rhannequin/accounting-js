@@ -1,7 +1,7 @@
 {
   "application_name": "Accounting",
   "current_amount": "Current amount: {{amount}}",
-  "spent": "Spent: {{amount}}",
+  "spent": "Spent",
   "table": {
     "label": "Label",
     "means": "Means",

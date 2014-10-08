@@ -1,0 +1,29 @@
+{
+  "name": "accounting",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rhannequin/accounting",
+  "authors": [
+    "rhannequin"
+  ],
+  "description": "Small tool to make my accounting and get interesting figures.",
+  "main": "Gulpfile.js",
+  "keywords": [
+    "nodejs",
+    "gulp",
+    "accounting"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.3",
+    "foundation": "~5.4.5"
+  }
+}

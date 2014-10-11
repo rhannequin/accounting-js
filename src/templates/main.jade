@@ -26,6 +26,11 @@ each month in expenses
         dd.active
           a(href='#tab-#{month.year}-#{month.month}-1')
             h4= i18n.__('spent')
+        dd
+          a(href='#tab-#{month.year}-#{month.month}-2')
+            h4= i18n.__('lunch')
       .tabs-content
         .content.active(id='tab-#{month.year}-#{month.month}-1')
           h4= (month.spent * (-1)).toFixed(2) + currency
+        .content(id='tab-#{month.year}-#{month.month}-2')
+          h4= lunch * (-1) + currency

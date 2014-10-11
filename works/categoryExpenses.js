@@ -16,13 +16,12 @@ module.exports = function(expenses, category, inverse) {
                 (
                   !inverse &&
                   typeof categories !== 'undefined' &&
-                  categories.indexOf(category) > 1
+                  categories.indexOf(category) > -1
                 )
     if(push) {
       result.push(expense)
     }
   })
-
 
   return result
 }

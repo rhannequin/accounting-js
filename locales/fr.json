@@ -2,6 +2,7 @@
   "application_name": "Comptes",
   "current_amount": "Montant actuel : {{amount}}",
   "spent": "Dépensé",
+  "lunch": "Déjeuné",
   "table": {
     "label": "Titre",
     "means": "Moyen",

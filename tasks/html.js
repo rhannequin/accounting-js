@@ -13,6 +13,8 @@ var gulp          = require('gulp')
   , cExpenses     = require('../' + paths.works + 'categoryExpenses')
   , spent         = require('../' + paths.works + 'spent')
   , jadeParams
+  , monthlyExpenses
+  , localsExpenses
 
 moment.locale(config.locale)
 i18n.configure({
@@ -22,12 +24,14 @@ i18n.configure({
 })
 
 expenses = utils.convert(expenses)
+monthlyExpenses = toMonths(expenses)
+localsExpenses = monthlySpent(monthlyExpenses, 'spent', 'ignore', true)
+localsExpenses = monthlySpent(localsExpenses, 'lunch', 'lunch')
 
 jadeParams = {
     pretty: true
   , locals: {
-      expenses: monthlySpent(toMonths(expenses))
-    , lunch: spent(toMonths(cExpenses(expenses, 'lunch'))[0].expenses)
+      expenses: localsExpenses
     , moment: moment
     , i18n: i18n
     , currency: config.currency

@@ -1,10 +1,11 @@
 var spent = require('./spent')
   , categoryExpenses = require('./categoryExpenses')
 
-module.exports = function(months) {
+module.exports = function(months, label, category, reverse) {
+  reverse = reverse || false
   months.forEach(function(month) {
-    var monthlyExpenses = categoryExpenses(month.expenses, 'ignore', true)
-    month.spent = spent(monthlyExpenses)
+    var monthlyExpenses = categoryExpenses(month.expenses, category, reverse)
+    month[label] = spent(monthlyExpenses)
   })
   return months
 }

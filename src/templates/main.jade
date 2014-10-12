@@ -33,4 +33,4 @@ each month in expenses
         .content.active(id='tab-#{month.year}-#{month.month}-1')
           h4= (month.spent * (-1)).toFixed(2) + currency
         .content(id='tab-#{month.year}-#{month.month}-2')
-          h4= lunch * (-1) + currency
+          h4= month.lunch * (-1) + currency

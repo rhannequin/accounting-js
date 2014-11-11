@@ -24,9 +24,5 @@ module.exports = {
       return b.date - a.date
     })
   }
-  ,
-  sortAndConvert: function(json) {
-    return this.sortByDate(this.convert(json))
-  }
 
 }

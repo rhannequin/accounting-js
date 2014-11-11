@@ -6,12 +6,14 @@ var gulp          = require('gulp')
   , paths         = require('./paths')
   , utils         = require('../utils')
   , config        = require('../' + paths.sources.root + 'config.json')
-  , expenses      = require('../' + paths.sources.root + 'data.json')
+  , data          = require('../' + paths.sources.root + 'data.json')
   , currentAmount = require('../' + paths.works + 'currentAmount')
   , toMonths      = require('../' + paths.works + 'toMonths')
   , monthlySpent  = require('../' + paths.works + 'monthlySpent')
   , cExpenses     = require('../' + paths.works + 'categoryExpenses')
   , spent         = require('../' + paths.works + 'spent')
+  , expenses      = data.expenses
+  , debits        = data.debits
   , jadeParams
   , monthlyExpenses
   , localsExpenses

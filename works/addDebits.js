@@ -11,9 +11,9 @@ module.exports = function(expenses, debits) {
 
   debits.forEach(function(debit) {
     var date = new Date(debit.start_date)
-      , time = new Date(date.getFullYear(), date.getMonth(), 1).getTime()
+      , statTime = new Date(date.getFullYear(), date.getMonth(), 1).getTime()
       , addToExpenses
-    if(months.indexOf(time) > -1) {
+    if(months.indexOf(statTime) > -1) {
       addToExpenses = {
           label: debit.label
         , means: debit.means
